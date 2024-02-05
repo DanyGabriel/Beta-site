@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter',sans-serif;
+}
+
+body{
+    background-color: rgb(69, 87, 99);
+}
+
+section,
+footer{
+    padding: 54px 0;
+}
+
+h3{
+    font-size: 50px;
+    color: black;
+}
+
+p{
+    color: white;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.btn{
+    background-color: rgb(98, 213, 248);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #6095f7;
+    }
+    to{
+        outline: 15px solid #121213;
+    }
+}
+
+.btn:hover{
+    background-color: rgb(20, 141, 189);
+}
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+
+nav ul a:not(.btn):after{
+    content: "";
+    background-color: rgb(10, 155, 252);
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+    
+}
+
+/*menu mmobile*/
+nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    display: none;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text h1{
+    font-size: 96px;
+    color: white;
+}
+
+.banner .banner-text p{
+    font-size: 20px;
+    color: ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+/* faca mais */
+.faca-mais .container{
+    display: flex;
+    align-items: center;
+}
+
+.faca-mais .faca-mais-text{
+    width: 50%;
+    padding: 0 40px;
+}
+
+.faca-mais .faca-mais-text h3{
+    font-size: 50px;
+}
+
+.faca-mais .faca-mais-text p{
+    margin: 5px 0 10px 0;
+}
+
+.faca-mais .faca-mais-img{
+    width: 50%;
+}
+
+.faca-mais .faca-mais-img img{
+    width: 100%;
+}
+
+.depoimentos h3{
+    text-align: center;
+}
+
+.depoimentos p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.depoimentos .card-item{
+    background-color: rgb(58, 89, 107);
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+}
+
+.depoimentos .card-item img{
+    border-radius: 100px;
+    width: 80px;
+    display: block;
+    margin: 10px auto;
+}
+
+.depoimentos .card-item .name-user{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.depoimentos .card-item .depoimentos-user{
+    font-size: 15px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+.depoimentos .card-item:hover{
+     background-color: #6095f7;
+     margin-top: -5px;
+}
+
+.depoimentos .card-item:hover .nome-user,
+.depoimentos .card-item:hover .depoimentos-user{
+    color: white;
+}
+
+/*footer*/
+.footer{
+    background-color: rgb(85, 40, 40);
+    text-align: center;
+}
+
+.footer i{
+    color: #6095f7;
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.footer p{
+    margin-top: 13px;
+    color: white;
+}
+
+/* Pagina Sobre */
+
+.sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre .sobre-text{
+    width: 50%;
+    padding-right: 30%;
+}
+
+.sobre .sobre-text p{
+    margin: 18px 0;
+    color: white;
+}
+
+.sobre .sobre-img{
+    width: 50%;
+    left: 100%;
+}
+
+.sobre .sobre-img{
+    width: 100%;
+    border-radius: 10px;
+}
+/* end pagina sobre */
+/* página serviços */
+.servicos h3{
+    text-align: center;
+}
+
+.servicos .container > p{
+    text-align: center;
+}
+
+.servicos .row-cards{
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+}
+
+.servicos .row-card-item{
+    background-color: rgb(73, 194, 241);
+    width: 350px;
+    padding: 20px;
+    border-radius: 14px;
+    margin: 20px;
+    transition: 0.3s ;
+}
+
+.servicos .row-card-item:hover{
+background-color: #6095f7;
+}
+/* end página serviços */
+@media(max-width: 830px){
+ /* menu mobile */
+ .ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(14, 115, 173);
+    width: 100%;
+ }
+ nav.menu-icon{
+    display: block;
+
+ }   
+}
